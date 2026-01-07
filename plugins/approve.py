@@ -46,7 +46,7 @@ async def auto_approve(client: Bot, message: ChatJoinRequest):
     try:
         invite_link = await client.export_chat_invite_link(chat.id)
         buttons = [
-            [InlineKeyboardButton('• Cʟɪᴄᴋ ʜᴇʀᴇ •', url=invite_link)]
+            [InlineKeyboardButton('• Cʟɪᴄᴋ ʜᴇʀᴇ •', url=https://t.me/Digital_Bot_Society)]
         ]
         markup = InlineKeyboardMarkup(buttons)
         caption_approve_ka = (
