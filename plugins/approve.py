@@ -44,8 +44,9 @@ async def auto_approve(client: Bot, message: ChatJoinRequest):
     
     # Send welcome message with invite link
     try:
+        # Fixed line 48: Added quotes around the URL
         buttons = [
-            [InlineKeyboardButton('• Cʟɪᴄᴋ ʜᴇʀᴇ •', url=https://t.me/Digital_Bot_Society)]
+            [InlineKeyboardButton('• Cʟɪᴄᴋ ʜᴇʀᴇ •', url='https://t.me/Digital_Bot_Society')]
         ]
         markup = InlineKeyboardMarkup(buttons)
         caption_approve_ka = (
